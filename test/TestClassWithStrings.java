@@ -12,8 +12,8 @@ public class TestClassWithStrings extends TestSuite {
 
     @Override
     public void testMethodList() {
-        passingTest();
-        failingTest();
+    passingTest();
+    failingTest();
     }
 
     public static void main(String[] args) {
@@ -25,6 +25,7 @@ public class TestClassWithStrings extends TestSuite {
         // Ændres fra int til Strings
         assertEquals(new String("string1"),new String ("string1"));
     }
+
     private void failingTest(){
         assertEquals(new String("string1"),new String ("string2"));
     }

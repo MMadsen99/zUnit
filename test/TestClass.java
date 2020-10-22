@@ -14,6 +14,7 @@ public class TestClass extends TestSuite {
     public void testMethodList() {
         passingTest();
         failingTest();
+
     }
 
     public static void main(String[] args) {
@@ -22,9 +23,11 @@ public class TestClass extends TestSuite {
     }
 
     private void passingTest(){
-        assertEquals(5,5);
+        assertEquals("string1","string1");
     }
     private void failingTest(){
-        assertEquals(3,7);
+        assertEquals("string1","string2");
     }
-}
+
+    }
+
